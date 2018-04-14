@@ -1,0 +1,160 @@
+}
+
+body,
+html {
+
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  margin:0;
+  padding:0;
+}
+
+h1, h2{
+  margin:0;
+  font-size: 2em;
+  color:white;
+  padding:10px;
+}
+body{
+  background-color: #fde9f1;
+}
+.main-content{
+  
+  margin:0 auto;
+  width:400px;
+}
+.flex-container{
+
+  margin-top:100px;
+  width:100%;
+  background-color: #fef9fb;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+}
+.header{
+  width: 100%;
+  background-color: #f16da4;
+  margin-bottom: 10px;
+  
+}
+.header h1{
+  padding:20px;
+  text-align: center;
+  
+}
+.main{
+  margin-top: 10px;
+  width:100%;
+  display:flex;
+  justify-content:space-around;
+  padding-bottom: 10px;
+
+}
+.main input{
+  
+  flex-basis: 300px;
+  color: #f16da4;
+}
+.main input::placeholder{
+padding: 5px;
+color:#f16da4;
+}
+
+.section{
+  margin-top: 10px;
+  width:100%;
+  
+}
+
+ul{
+  width:100%;
+  list-style:none;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0px;
+  padding:0;
+
+}
+li{
+  box-sizing: border-box;
+  width:100%;
+  background-color: #f9bad4;
+  color:#f16da4;
+  padding:10px;
+  position:relative;
+  margin-bottom: 3px;
+ color:white;
+ animation-name: fadeInDown;
+  animation-duration: 0.5s;
+  
+
+}
+
+
+
+.btn-primary {
+  background-color: #fde9f1;
+  border-radius: 200px;
+   }
+.btn-primary:hover {
+  background-color: #f16da4;
+  cursor: pointer;
+} 
+.ion-ios-cart{
+  font-size: 2em;
+  color:#f16da4;
+}
+
+li.done{
+ color:white;
+ 
+background-color:#f16da4; 
+
+}
+.del-button{
+  background-color: #fef9fb;
+  color: #f16da4;
+  position:absolute;
+  right:15px;
+  border-radius: 200px;
+}
+.del-button:hover{
+  background-color: #f16da4;
+  color: white;
+ 
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+}
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.fadeOutLeft {
+  animation-name: fadeOutLeft;
+  animation-duration: 0.2s;
+}
